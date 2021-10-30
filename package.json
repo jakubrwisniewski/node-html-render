@@ -1,11 +1,11 @@
 {
-  "name": "render",
+  "name": "@jkob/node-html-renderer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple template-base node static html generator",
   "scripts": {
     "test": "jest --watch"
   },
-  "keywords": [],
+  "keywords": ["node", "html", "static", "html"],
   "author": "Jakub Wiśniewski",
   "license": "ISC",
   "devDependencies": {

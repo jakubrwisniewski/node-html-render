@@ -3,9 +3,8 @@
 Simple static HTML render, using templates and variables
 
 ## Instalation
-Attention: package is not published yet. This is just a proposal.
 ```
-npm i @jkob/node-html-renderer
+npm install @jkob/node-html-renderer --save
 ```
 
 ## Usage in code
@@ -16,7 +15,7 @@ const HtmlRenderer = require('node-html-renderer');
 const htmlRenderer = new HtmlRenderer({
 	outputDirectory: HtmlRenderer.realPath('./output'),
 	templatesDirectory: HtmlRenderer.realPath('./templates'),
-	resourcesUrl: '../public' // any path to be resolved in browser
+	resourcesUrl: '../public' // any path to be resolved in browser, relative to index.html
 });
 
 htmlRenderer
@@ -30,11 +29,11 @@ htmlRenderer
 	.save('index);
 ```
 
-Above example will create `index.html` file with parsed content in `./output` directory.
+Above example will create `index.html` file with parsed content in `./output` directory. Template `page` will be resolved to `./templates/page.html` file
 
 ## Template syntax
 
-Templates are simple HTML files with some specified syntax recognized by HTML Renderer.
+Templates are simple HTML files with extra syntax recognized by HTML Renderer.
 
 ### Variables
 
