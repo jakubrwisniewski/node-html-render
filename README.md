@@ -1,5 +1,8 @@
 # node-html-renderer
 
+[![](https://tokei.rs/b1/github/jakubrwisniewski/another-ws-server)](jakubrwisniewski/node-html-render)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/jakubrwisniewski/node-html-render)
+
 Simple static HTML render, using templates and variables
 
 ## Instalation
